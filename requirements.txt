@@ -21,9 +21,10 @@ matplotlib==3.9.2
 jsonschema==4.23.0
 
 # --- 딥러닝 (Q2~Q4). torchvision이 있으면 노트북이 tv_compat 대신 진짜 transforms.v2를 씀
-#     지정 모델은 저장소의 mini_tinyvit.py(직접 구현)를 쓰므로 timm은 설치하지 않습니다.
 torch==2.5.1
 torchvision==0.20.1
+# 시험의 timm.create_model("tiny_vit_5m_224") API 연습용 (노트북은 mini_tinyvit을 쓰므로 필수는 아님)
+timm==1.0.11
 
 # --- Jupyter: VSCode 노트북 커널(ipykernel) + VSCode 밖에서 열 때(JupyterLab) + 진행 표시줄 위젯
 ipykernel==6.29.5
