@@ -1,0 +1,8 @@
+# 가상환경 (각 PC에서 requirements.txt로 다시 만듭니다)
+.venv/
+
+# 실행하면 생기는 것
+제출물/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

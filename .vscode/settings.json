@@ -1,0 +1,11 @@
+{
+    // 이 폴더를 열면 항상 프로젝트의 Python 3.12 가상환경을 씁니다
+    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    // 새 터미널을 열면 가상환경을 자동으로 활성화
+    "python.terminal.activateEnvironment": true,
+    // 노트북 커널도 같은 인터프리터를 먼저 추천
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "files.exclude": {
+        "**/__pycache__": true
+    }
+}
