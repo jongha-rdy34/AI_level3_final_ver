@@ -1,0 +1,15 @@
+# torch / torchvision 은 setup.cmd 가 GPU 유무에 맞춰 따로 설치합니다.
+#   GPU(NVIDIA): pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+#   CPU       : pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cpu
+timm==1.0.31
+safetensors==0.8.0
+numpy==2.5.4
+pandas==3.1.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+pillow==13.0.0
+tqdm==4.70.1
+openai==3.46.0
+jsonschema==4.26.0
+ipykernel==7.4.0
+nbconvert

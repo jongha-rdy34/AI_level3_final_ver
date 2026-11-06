@@ -1,0 +1,30 @@
+[
+ {
+  "batch_size": 32,
+  "learning_rate": 0.0001,
+  "epochs": 20,
+  "best_f1": 0.9437,
+  "best_epoch": 13
+ },
+ {
+  "batch_size": 32,
+  "learning_rate": 0.0002,
+  "epochs": 20,
+  "best_f1": 0.9476,
+  "best_epoch": 6
+ },
+ {
+  "batch_size": 64,
+  "learning_rate": 0.0001,
+  "epochs": 20,
+  "best_f1": 0.941,
+  "best_epoch": 16
+ },
+ {
+  "batch_size": 64,
+  "learning_rate": 0.0003,
+  "epochs": 20,
+  "best_f1": 0.9425,
+  "best_epoch": 19
+ }
+]

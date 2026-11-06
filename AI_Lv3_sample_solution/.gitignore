@@ -1,0 +1,11 @@
+.venv/
+raw/
+data/
+outputs/
+*.safetensors
+gms_config.pkl
+_tmp_*.ipynb
+_grading/*_test_truth.csv
+__pycache__/
+.ipynb_checkpoints/
+test.csv
