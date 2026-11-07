@@ -1,0 +1,17 @@
+{
+    // 이 폴더의 .venv를 기본 인터프리터·노트북 커널로 사용 (첫 환경 셀 검사 통과)
+    "python.defaultInterpreterPath": "${workspaceFolder}\.venv\Scripts\python.exe",
+    "python.terminal.activateEnvironment": true,
+    "jupyter.notebookFileRoot": "${fileDirname}",
+
+    // 자동완성(IntelliSense)
+    "python.languageServer": "Pylance",
+    "editor.quickSuggestions": { "other": "on", "comments": "off", "strings": "off" },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.parameterHints.enabled": true,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "python.analysis.completeFunctionParens": false,
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.typeCheckingMode": "off",
+    "jupyter.enableExtendedPythonKernelCompletions": true
+}

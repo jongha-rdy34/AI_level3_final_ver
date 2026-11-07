@@ -64,3 +64,13 @@ P2_1 하이퍼파라미터 비교 (Task A + label smoothing CE, 20 epoch, `_buil
 - **P2_1**: Task A `requires_grad_` + `train()` 오버라이드로 고정 구간 항상 eval + `no_grad`. Task B label smoothing CE를 `log_softmax`+`gather`로 직접 구현. Task C 학습률·batch 비교 표.
 - **P2_2**: 증강 + AdamW(no-decay 그룹) + warmup→cosine + label smoothing + gradient clipping + Dropout + **eval forward 안의 좌우 반전 TTA**(추론 셀 수정 없이).
 - **P3**: 형식 규칙 → 최종 합의 원칙 → 항목 정의(명도일/입주일/임대차시작일 구분, 계약금지급일=완납일) → 금액(만 원 생략 관행)·날짜 계산.
+
+## 7. 최소 암기 정답(optimized)과 연습장 (2026-11-07 추가)
+| 파일 | 내용 |
+|---|---|
+| `P1_1_answer_optimized.ipynb`, `P2_1_…`, `P2_2_…`, `P3_…` | `AI_level3_대비.pdf`의 '외울 코드 최소화' 변경을 반영한 정답. 맨 위 셀에 원래 정답안과 다른 점 요약. 하이퍼파라미터는 기존 answer 값(바뀐 줄에 주석) |
+| `P1_1_practice.ipynb` … `P3_practice.ipynb` | `수정 가능` 셀이 문제 원본 그대로인 연습장. GPU가 없으면 QUICK 모드로 끝까지 실행됨 |
+| `_build/build_optimized.py` | 위 두 종류를 다시 만드는 생성기 |
+
+CPU QUICK 모드 실행 확인(3 epoch, 흐름 확인용·시험 점수 아님): P1_1 val macro-F1 0.727, P2_1 0.349(학습 3,000장), P2_2 val accuracy 0.761, P3 형식 검사 2/2(모의 모드).
+명령줄 실행은 `.venv\Scripts\python.exe -m nbconvert ...`처럼 **모듈로** 부르세요. `python -m jupyter nbconvert`는 PATH의 시스템 Python 쪽 nbconvert를 불러 커널 검사에서 멈출 수 있습니다.
